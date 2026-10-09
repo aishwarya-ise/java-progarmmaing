@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aishwarya Kotesh - Information Science & Engineering Student, Developer, IoT Enthusiast & Smart India Hackathon Participant.">
+    <meta name="keywords" content="Aishwarya Kotesh, Information Science Engineering, AIT Chikkamagaluru, IoT Smart Kitchen, Smart Waste Segregation, Python, C, Arduino, SIH">
+    <title>Aishwarya Kotesh | Information Science Engineer Portfolio</title>
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Wallpaper & Layered Gradients -->
+    <div class="bg-wallpaper" id="bg-wallpaper" aria-hidden="true"></div>
+    <div class="bg-overlay" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="site-header" id="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="nav-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-symbol">&lt;/&gt;</span>
+                    <span class="logo-name">Aishwarya Kotesh<span class="dot">.</span></span>
+                </a>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#ai-chat" class="nav-link ai-nav-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Chat</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Night/Dark Mode" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Resume Header CTA -->
+                <a href="resume.pdf" class="btn btn-outline nav-resume-btn" download target="_blank">
+                    <i class="fa-solid fa-file-arrow-down"></i> <span>Resume</span>
+                </a>
+
+                <!-- Mobile Hamburger Menu Button -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content">
+
+        <!-- ==================== 1. HERO SECTION ==================== -->
+        <section class="section hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-pulse"></span>
+                        <span>Information Science & Engineering • AIT Chikkamagaluru</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Aishwarya Kotesh</span>
+                        <span class="hero-role">Information Science Engineer & Developer</span>
+                    </h1>
+
+                    <p class="hero-tagline">
+                        Passionate about C, Python, Data Structures & Algorithms, Object-Oriented Design, and building impactful IoT automation systems. Smart India Hackathon (SIH) Participant driven by innovation and problem-solving.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-microchip"></i> Explore Projects
+                        </a>
+                        <a href="resume.pdf" class="btn btn-secondary" download target="_blank">
+                            <i class="fa-solid fa-file-pdf"></i> Download Resume
+                        </a>
+                        <a href="#ai-chat" class="btn btn-ai">
+                            <i class="fa-solid fa-robot"></i> Chat with AI Assistant
+                        </a>
+                    </div>
+
+                    <!-- Direct Contact Pills in Hero -->
+                    <div class="hero-contact-pills">
+                        <a href="tel:+918431634708" class="contact-pill" title="Call Aishwarya Kotesh">
+                            <i class="fa-solid fa-phone"></i> +91 8431634708
+                        </a>
+                        <a href="mailto:aishu3646243@gmail.com" class="contact-pill" title="Send Email">
+                            <i class="fa-solid fa-envelope"></i> aishu3646243@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/aishwarya-k-5b069538a" target="_blank" rel="noopener noreferrer" class="contact-pill" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/aishwarya-ise" target="_blank" rel="noopener noreferrer" class="contact-pill" title="GitHub Profile">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Visual Showcase -->
+                <div class="hero-visual">
+                    <div class="profile-card-glass">
+                        <div class="card-glow-layer"></div>
+                        <div class="profile-img-wrapper">
+                            <img src="photo.jpeg" alt="Aishwarya Kotesh - Information Science Engineer" class="profile-photo" onerror="this.src='baground.jpeg'">
+                            <div class="floating-badge badge-top-right">
+                                <i class="fa-solid fa-graduation-cap"></i> B.E. ISE (84%)
+                            </div>
+                            <div class="floating-badge badge-bottom-left">
+                                <i class="fa-solid fa-award"></i> SIH Participant
+                            </div>
+                        </div>
+
+                        <div class="profile-card-info">
+                            <h3 class="profile-name">Aishwarya Kotesh</h3>
+                            <p class="profile-subtitle"><i class="fa-solid fa-location-dot"></i> Chikkamagaluru, Karnataka</p>
+                            <div class="quick-stats">
+                                <div class="stat-item">
+                                    <span class="stat-val">84%</span>
+                                    <span class="stat-label">B.E. Aggregate</span>
+                                </div>
+                                <div class="stat-divider"></div>
+                                <div class="stat-item">
+                                    <span class="stat-val">2+</span>
+                                    <span class="stat-label">IoT Projects</span>
+                                </div>
+                                <div class="stat-divider"></div>
+                                <div class="stat-item">
+                                    <span class="stat-val">SIH</span>
+                                    <span class="stat-label">Hackathon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 2. ABOUT ME SECTION ==================== -->
+        <section class="section about-section" id="about">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+                <h2 class="section-title">Background & Personal Introduction</h2>
+                <p class="section-subtitle">Dedicated engineering student aiming to build innovative tech solutions and practical hardware-software integrated systems.</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Video Intro & Visual Media -->
+                <div class="about-media-card">
+                    <div class="video-container">
+                        <div class="video-header">
+                            <span class="video-dot red"></span>
+                            <span class="video-dot yellow"></span>
+                            <span class="video-dot green"></span>
+                            <span class="video-title"><i class="fa-solid fa-video"></i> Introduction Video</span>
+                        </div>
+                        <video class="intro-video" id="intro-video" controls preload="metadata" poster="photo.jpeg">
+                            <source src="inruducation video.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    <div class="media-caption">
+                        <p><i class="fa-solid fa-circle-play"></i> Watch my introduction video highlighting my background, projects, and academic goals.</p>
+                    </div>
+                </div>
+
+                <!-- Right: Bio Content & Key Strengths -->
+                <div class="about-bio-content">
+                    <h3 class="bio-heading">Engineering Meaningful Solutions with Code & Hardware</h3>
+                    <p class="bio-text">
+                        I am currently pursuing my <strong>Bachelor of Engineering in Information Science and Engineering (2025–2029)</strong> at <strong>Adichunchanagiri Institute of Technology, Chikkamagaluru (VTU)</strong> with an academic aggregate of <strong>84%</strong>.
+                    </p>
+                    <p class="bio-text">
+                        My interests span programming languages like <strong>C and Python</strong>, core computer science concepts such as <strong>Data Structures, Algorithms, and Object-Oriented Programming</strong>, as well as <strong>IoT automation</strong> using Arduino IDE and Embedded C/C++. I also enjoy collaborating in competitive team environments like the <strong>Smart India Hackathon (SIH)</strong>.
+                    </p>
+
+                    <!-- Highlights Cards -->
+                    <div class="bio-highlights-grid">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="highlight-text">
+                                <h4>Programming & Core CS</h4>
+                                <p>C, Python, OOPs concepts, Data Structures & Algorithms.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="highlight-text">
+                                <h4>IoT & Embedded Systems</h4>
+                                <p>Sensor integrations, Arduino IDE, Embedded C/C++, smart automation.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="highlight-text">
+                                <h4>AI & Machine Learning</h4>
+                                <p>Foundational concepts of Artificial Intelligence and intelligent automation.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-people-group"></i></div>
+                            <div class="highlight-text">
+                                <h4>Soft Skills & Teamwork</h4>
+                                <p>Strong communication, English proficiency, problem-solving, and collaboration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="resume.pdf" class="btn btn-primary" download target="_blank">
+                            <i class="fa-solid fa-file-pdf"></i> Download Official Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 3. EDUCATION SECTION ==================== -->
+        <section class="section education-section" id="education">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
+                <h2 class="section-title">Education & Qualifications</h2>
+                <p class="section-subtitle">Comprehensive academic journey from school foundations to engineering degree.</p>
+            </div>
+
+            <div class="education-grid">
+                <!-- Degree 1: Engineering -->
+                <div class="education-card featured-edu">
+                    <div class="edu-badge">Current Degree</div>
+                    <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="edu-body">
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> 2025 — 2029</span>
+                        <h3 class="edu-degree">Bachelor of Engineering (B.E.)</h3>
+                        <h4 class="edu-dept">Information Science and Engineering</h4>
+                        <p class="edu-institute"><i class="fa-solid fa-location-dot"></i> Adichunchanagiri Institute of Technology, Chikkamagaluru</p>
+                        <p class="edu-board">Visvesvaraya Technological University (VTU), Karnataka</p>
+                        <div class="edu-score-badge">
+                            <span class="score-label">Aggregate Score:</span>
+                            <span class="score-value">84%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Degree 2: PUC -->
+                <div class="education-card">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-body">
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> Completed 2025</span>
+                        <h3 class="edu-degree">Pre-University Course (PUC)</h3>
+                        <h4 class="edu-dept">Science Stream</h4>
+                        <p class="edu-institute"><i class="fa-solid fa-location-dot"></i> Kumadvathi Science and Commerce PU College, Shikaripura</p>
+                        <p class="edu-board">Department of Pre-University Education, Karnataka</p>
+                        <div class="edu-score-badge">
+                            <span class="score-label">Final Score:</span>
+                            <span class="score-value">78%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Degree 3: SSLC / 10th -->
+                <div class="education-card">
+                    <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="edu-body">
+                        <span class="edu-year"><i class="fa-regular fa-calendar"></i> Completed 2023</span>
+                        <h3 class="edu-degree">SSLC / 10th Standard</h3>
+                        <h4 class="edu-dept">Secondary School Curriculum</h4>
+                        <p class="edu-institute"><i class="fa-solid fa-location-dot"></i> Karnataka Public School, Hithala</p>
+                        <p class="edu-board">Karnataka Secondary Education Examination Board (KSEB)</p>
+                        <div class="edu-score-badge">
+                            <span class="score-label">Final Score:</span>
+                            <span class="score-value">81.92%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. SKILLS SECTION ==================== -->
+        <section class="section skills-section" id="skills">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-gears"></i> Core Competencies</span>
+                <h2 class="section-title">Technical & Soft Skills</h2>
+                <p class="section-subtitle">Programming languages, core CS principles, IoT tools, and professional attributes.</p>
+            </div>
+
+            <!-- Skills Category Filter Tabs -->
+            <div class="skills-filter-tabs">
+                <button class="skill-tab active" data-filter="all">All Skills</button>
+                <button class="skill-tab" data-filter="programming">Programming Languages</button>
+                <button class="skill-tab" data-filter="core">Core Concepts & AI</button>
+                <button class="skill-tab" data-filter="tools">Tools & Hardware</button>
+                <button class="skill-tab" data-filter="soft">Soft Skills</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1: C Programming -->
+                <div class="skill-card" data-category="programming">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap c-icon"><i class="fa-solid fa-c"></i></div>
+                        <div class="skill-meta">
+                            <h4>C Language</h4>
+                            <span class="skill-level">Proficient (88%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <p class="skill-desc">Procedural programming, memory management, pointers, and data structures implementation.</p>
+                </div>
+
+                <!-- Skill 2: Python -->
+                <div class="skill-card" data-category="programming core">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap python-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="skill-meta">
+                            <h4>Python</h4>
+                            <span class="skill-level">Proficient (85%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <p class="skill-desc">Scripting, OOPs logic, basic AI/ML automation, and algorithmic problem solving.</p>
+                </div>
+
+                <!-- Skill 3: OOPs -->
+                <div class="skill-card" data-category="core">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap oops-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <div class="skill-meta">
+                            <h4>OOPs (Object-Oriented Programming)</h4>
+                            <span class="skill-level">Advanced (90%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-desc">Encapsulation, Inheritance, Polymorphism, Abstraction, and modular software architecture.</p>
+                </div>
+
+                <!-- Skill 4: DSA -->
+                <div class="skill-card" data-category="core">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap dsa-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="skill-meta">
+                            <h4>Data Structures & Algorithms</h4>
+                            <span class="skill-level">Proficient (85%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <p class="skill-desc">Arrays, Linked Lists, Stacks, Queues, Searching, Sorting, and algorithm complexity analysis.</p>
+                </div>
+
+                <!-- Skill 5: AI/ML Fundamentals -->
+                <div class="skill-card" data-category="core">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap ai-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div class="skill-meta">
+                            <h4>AI & Machine Learning</h4>
+                            <span class="skill-level">Foundations (80%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+                    <p class="skill-desc">Fundamentals of Artificial Intelligence, basic machine learning pipelines, and smart automation.</p>
+                </div>
+
+                <!-- Skill 6: Arduino IDE & Embedded C/C++ -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap arduino-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="skill-meta">
+                            <h4>Arduino IDE & Embedded C/C++</h4>
+                            <span class="skill-level">Advanced (90%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-desc">Microcontroller programming, sensor monitoring, actuator automation, and IoT hardware interfaces.</p>
+                </div>
+
+                <!-- Skill 7: Git & GitHub -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap git-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="skill-meta">
+                            <h4>Git & GitHub</h4>
+                            <span class="skill-level">Proficient (88%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <p class="skill-desc">Version control, repository management, branch workflows, and team collaboration.</p>
+                </div>
+
+                <!-- Skill 8: Soft Skills & Teamwork -->
+                <div class="skill-card" data-category="soft">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrap soft-icon"><i class="fa-solid fa-comments"></i></div>
+                        <div class="skill-meta">
+                            <h4>Communication & Teamwork</h4>
+                            <span class="skill-level">Professional (95%)</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                    </div>
+                    <p class="skill-desc">Effective English communication, team problem-solving, presentation, and collaborative spirit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. PROJECTS SECTION ==================== -->
+        <section class="section projects-section" id="projects">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+                <h2 class="section-title">Projects from My Resume</h2>
+                <p class="section-subtitle">Real-world IoT and embedded engineering projects developed using Arduino, sensors, and Embedded C/C++.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: IoT Based Smart Kitchen -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="baground.jpeg" alt="IoT Based Smart Kitchen" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aishwarya-ise" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#contact" class="project-link-btn" title="Contact about Project"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-category">IoT & Smart Home Automation</div>
+                        <h3 class="project-title">1. IoT Based Smart Kitchen</h3>
+                        <p class="project-desc">
+                            An IoT-based smart kitchen system engineered with sensor monitoring and automation. Features real-time kitchen safety, gas/flame detection, and appliance monitoring using Arduino IDE and Embedded C/C++ for improved convenience and safety.
+                        </p>
+                        <div class="project-bullets">
+                            <li><i class="fa-solid fa-check"></i> Real-time kitchen safety and appliance monitoring.</li>
+                            <li><i class="fa-solid fa-check"></i> Automated alerts and sensor feedback for incident prevention.</li>
+                            <li><i class="fa-solid fa-check"></i> Smart control system for energy and appliance efficiency.</li>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>IoT</span>
+                            <span>Arduino IDE</span>
+                            <span>Embedded C/C++</span>
+                            <span>Sensors</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Smart Waste Segregation System -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="photo.jpeg" alt="Smart Waste Segregation System" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aishwarya-ise" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#contact" class="project-link-btn" title="Contact about Project"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-category">Smart City & Environmental Tech</div>
+                        <h3 class="project-title">2. Smart Waste Segregation System</h3>
+                        <p class="project-desc">
+                            An automated waste segregation system developed using Arduino and specialized sensors. Automatically detects and separates metal and non-metal waste using Embedded C/C++ logic to support smart, efficient, and eco-friendly waste management.
+                        </p>
+                        <div class="project-bullets">
+                            <li><i class="fa-solid fa-check"></i> Automated detection and sorting of metal vs non-metal waste.</li>
+                            <li><i class="fa-solid fa-check"></i> Integrated proximity and inductive sensors with Arduino.</li>
+                            <li><i class="fa-solid fa-check"></i> Eco-friendly solution supporting cleaner urban waste management.</li>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Arduino IDE</span>
+                            <span>Embedded C/C++</span>
+                            <span>Sensors</span>
+                            <span>Automation</span>
+                            <span>Waste Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 6. EXPERIENCE & CERTIFICATIONS SECTION ==================== -->
+        <section class="section experience-section" id="experience">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-award"></i> Hackathons & Achievements</span>
+                <h2 class="section-title">Experience & Certifications</h2>
+                <p class="section-subtitle">National hackathons, collaborative project competitions, and validated credentials.</p>
+            </div>
+
+            <div class="experience-cert-grid">
+                <!-- Left: Experience / Hackathon -->
+                <div class="exp-cert-col">
+                    <h3 class="col-title"><i class="fa-solid fa-trophy"></i> Experience & Hackathons</h3>
+                    <div class="experience-card">
+                        <div class="exp-badge">National Hackathon</div>
+                        <div class="exp-header">
+                            <div class="exp-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div>
+                                <h4 class="exp-role">Participant — Smart India Hackathon (SIH)</h4>
+                                <span class="exp-org">Ministry of Education, Government of India</span>
+                            </div>
+                        </div>
+                        <p class="exp-desc">
+                            Participated in the prestigious <strong>Smart India Hackathon (SIH)</strong>, actively contributing to innovative problem-solving, rapid prototyping, and team-based development of impactful technological solutions.
+                        </p>
+                        <div class="exp-highlights">
+                            <span><i class="fa-solid fa-circle-check"></i> Innovative Problem Solving</span>
+                            <span><i class="fa-solid fa-circle-check"></i> Team-Based Development</span>
+                            <span><i class="fa-solid fa-circle-check"></i> Rapid Technical Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Certifications -->
+                <div class="exp-cert-col">
+                    <h3 class="col-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                    <div class="cert-card">
+                        <div class="cert-icon-wrapper"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">Smart India Hackathon (SIH)</h4>
+                            <p class="cert-type">Certificate of Participation</p>
+                            <span class="cert-issued"><i class="fa-regular fa-calendar-check"></i> Government of India / SIH Initiative</span>
+                            <p class="cert-summary">Recognized for participation and contribution to national level innovation challenges.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon-wrapper"><i class="fa-solid fa-file-shield"></i></div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">Bachelor of Engineering Candidate</h4>
+                            <p class="cert-type">Adichunchanagiri Institute of Technology (VTU)</p>
+                            <span class="cert-issued"><i class="fa-regular fa-calendar-check"></i> Aggregate: 84%</span>
+                            <p class="cert-summary">Consistent academic excellence in Information Science & Engineering curriculum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 7. AI CHAT INTERFACE SECTION ==================== -->
+        <section class="section ai-chat-section" id="ai-chat">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Interactive AI</span>
+                <h2 class="section-title">Chat with Aishwarya's AI Assistant</h2>
+                <p class="section-subtitle">Ask any question about Aishwarya Kotesh's education (AIT, VTU), IoT projects, skills, SIH participation, or contact details.</p>
+            </div>
+
+            <div class="chat-wrapper">
+                <div class="chat-card">
+                    <!-- Chat Header -->
+                    <div class="chat-header">
+                        <div class="chat-bot-profile">
+                            <div class="bot-avatar">
+                                <i class="fa-solid fa-robot"></i>
+                                <span class="bot-status-online"></span>
+                            </div>
+                            <div class="bot-title-area">
+                                <h3>Aishwarya Kotesh AI</h3>
+                                <span><i class="fa-solid fa-bolt"></i> Knowledgeable about Resume & Background</span>
+                            </div>
+                        </div>
+                        <div class="chat-actions">
+                            <button class="chat-tool-btn" id="clear-chat-btn" title="Reset Chat"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Messages Area -->
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Welcome Message from AI -->
+                        <div class="chat-msg ai-msg">
+                            <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div class="msg-bubble">
+                                <p>👋 Hello! I am Aishwarya Kotesh's portfolio AI assistant. I have full knowledge of Aishwarya's education at AIT Chikkamagaluru (84%), IoT Smart Kitchen & Smart Waste Segregation projects, SIH Hackathon experience, C/Python skills, and contact info. What would you like to know?</p>
+                                <span class="msg-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Suggested Prompts -->
+                    <div class="suggested-prompts" id="suggested-prompts">
+                        <button class="prompt-chip" data-question="What are your education qualifications and marks?">🎓 Education & Marks</button>
+                        <button class="prompt-chip" data-question="Tell me about your IoT projects.">🛠️ IoT Projects</button>
+                        <button class="prompt-chip" data-question="What is your Smart India Hackathon (SIH) experience?">🏆 SIH Hackathon</button>
+                        <button class="prompt-chip" data-question="How can I contact Aishwarya?">📞 Phone & Email</button>
+                        <button class="prompt-chip" data-question="How do I download the resume PDF?">📜 Resume</button>
+                    </div>
+
+                    <!-- Chat Input Area -->
+                    <form class="chat-input-form" id="chat-form">
+                        <input type="text" id="chat-input" placeholder="Type your question (e.g., 'Tell me about the Smart Waste Segregation project')..." autocomplete="off" required>
+                        <button type="submit" id="chat-send-btn" aria-label="Send message">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 8. CONTACT SECTION ==================== -->
+        <section class="section contact-section" id="contact">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-envelope"></i> Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Feel free to connect for internships, academic collaborations, or project inquiries.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Direct Info Cards -->
+                <div class="contact-info-cards">
+                    <!-- Phone -->
+                    <a href="tel:+918431634708" class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">Phone / WhatsApp</span>
+                            <span class="info-value">+91 8431634708</span>
+                        </div>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:aishu3646243@gmail.com" class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">Email Address</span>
+                            <span class="info-value">aishu3646243@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/aishwarya-k-5b069538a" target="_blank" rel="noopener noreferrer" class="info-card">
+                        <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">LinkedIn Profile</span>
+                            <span class="info-value">linkedin.com/in/aishwarya-k-5b069538a</span>
+                        </div>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/aishwarya-ise" target="_blank" rel="noopener noreferrer" class="info-card">
+                        <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">GitHub Profile</span>
+                            <span class="info-value">github.com/aishwarya-ise</span>
+                        </div>
+                    </a>
+
+                    <!-- Resume Card -->
+                    <a href="resume.pdf" download target="_blank" class="info-card resume-info-card">
+                        <div class="info-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">Download Official Document</span>
+                            <span class="info-value">Aishwarya_Kotesh_Resume.pdf</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-down download-indicator"></i>
+                    </a>
+                </div>
+
+                <!-- Right: Interactive Contact Form -->
+                <div class="contact-form-card">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Full Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Your Email Address</label>
+                            <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="Project Discussion / Opportunity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Hello Aishwarya, I would like to connect regarding..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-feedback" id="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <span class="logo-symbol">&lt;/&gt;</span>
+                        <span class="logo-name">Aishwarya Kotesh<span class="dot">.</span></span>
+                    </a>
+                    <p class="footer-bio">Information Science and Engineering Student at Adichunchanagiri Institute of Technology, Chikkamagaluru (VTU).</p>
+                </div>
+
+                <div class="footer-quick-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-info">
+                    <h4>Direct Contact</h4>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+918431634708">+91 8431634708</a></p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:aishu3646243@gmail.com">aishu3646243@gmail.com</a></p>
+                    <p><i class="fa-solid fa-file-pdf"></i> <a href="resume.pdf" download target="_blank">Download Resume PDF</a></p>
+                </div>
+
+                <div class="footer-social-wrapper">
+                    <h4>Connect</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://linkedin.com/in/aishwarya-k-5b069538a" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/aishwarya-ise" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="tel:+918431634708" class="social-icon-btn" aria-label="Phone Number" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:aishu3646243@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aishwarya Kotesh. All Rights Reserved. Adichunchanagiri Institute of Technology, VTU.</p>
+                <a href="#hero" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
